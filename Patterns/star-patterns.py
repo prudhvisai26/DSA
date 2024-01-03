@@ -140,3 +140,37 @@ def nStarTriangle(n):
             for j in range(n//2):
                 print(" ",end="")
         print()
+"""
+Input: N = 3
+Output:
+Result: 
+******
+**  **
+*    *
+*    *
+**  **
+******
+
+"""
+
+def symmetry(n):
+    sp=0
+    for i in range(n):
+        for j in range(n-i):
+            print("*",end="")
+        for j in range(sp):
+            print(" ",end="")
+        for j in range(n-i):
+            print("*",end="")
+        sp+=2
+        print()
+    sp=2*(n-1)
+    for i in range(n):
+        for j in range(i+1):
+            print("*",end="")
+        for j in range(sp):
+            print(end=" ")
+        for j in range(i+1):
+            print("*",end="")
+        sp-=2
+        print()
