@@ -26,7 +26,7 @@ Result: 4
 2.Approach 1(Hashing):
     #Initialize a dictionary/hashmap and add the count of each element from the array to dictionary.
     #Finally, iterate through the hashmap and find out the element with the value >N/2 then print the result.
-    TC:O(n)+O(n) Sc:O(1)
+    TC:O(n)+O(n) Sc:O(n)
 3.Approach 2(Moore's Voting Algorithm)
     #Initialise the variables count,element as zero.
     #Now run a loop and add some conditions:
