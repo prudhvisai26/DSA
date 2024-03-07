@@ -26,6 +26,13 @@ ac
 b
 bc
 c
+
+
+Maintain a temp string (say f),which is empty initally.
+Now you have two options,either you can pick the character or not pick the character and move to the next index.
+Firstly we pick the character at ith index and then move to the next index.(f + s[i])
+If the base condition is hit,i.e i==s.length() ,then we print the temp string and return.
+Now while backtracking we have to pop the last character since now we have to implement the non-pick condition and then move to next index.
 """
 
 def generateSubsequences(s:str) -> List[str]:
